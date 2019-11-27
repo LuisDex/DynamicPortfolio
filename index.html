@@ -175,7 +175,7 @@ function projectCards(array)
 
   for(var i=0;i<array.length;i++)
   {
-   var newCol = $("<div>").addClass("carousel-item").addClass("col-md-4");
+   var newCol = $("<div>").addClass("carousel-item").addClass("col-sm-4");
    
    if(i===0)
    {
@@ -184,7 +184,7 @@ function projectCards(array)
    var newCard = $("<div>").addClass("card text-center");
    var newImage = $("<img>").attr("src",array[i].imgSrc).attr("alt",array[i].imgAlt).addClass("card-img-top").addClass("img-fluid");
    var newBody = $("<div>").addClass("card-body");
-   var newDesc = $("<p>").text(array[i].description).addClass("card-text text-left");
+   var newDesc = $("<p>").text(array[i].description).addClass("card-text text-left pt-2 pb-2");
    var contentTitle = $("<h4>").text(array[i].title).addClass("card-title");
    var demoImg = $("<i>").addClass("fas fa-external-link-alt ml-2");
    var demoButton = $("<a>").addClass("btn btn-primary backBtn mr-2 ml-2").attr("href",array[i].demoLive).attr("target","_blank").text("Demo").append(demoImg);
