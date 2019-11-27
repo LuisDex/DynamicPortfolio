@@ -1,0 +1,329 @@
+body{
+    background:url("./Images/webdevbackground.png") no-repeat;
+    background-size:cover;
+    color:rgb(126, 119, 119);
+    margin:0;
+    font-family: 'Play', sans-serif;
+    list-style: none;
+    text-decoration: none; 
+  }
+  
+  .jumbotron{
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+  .jumbotron, .card-body, #aloneHeader{
+    background-color: rgba(202,235,242,0.8);
+  
+  }
+  
+  .headerRow{
+    color:white;
+    font-weight: bold;
+    background-color:rgba(0,0,0,0.5);
+
+}
+
+#portHeader{
+    color:white;
+    font-weight: bold;
+    background-color:rgba(0,0,0,0.8);
+}
+
+  .aboutMe{
+    padding-top:30px;
+    color:white;
+    
+}
+.myimg{
+    padding-top:30px;
+    max-width:300px;
+    max-height: 300px;
+
+}
+  .lead{
+    font-weight:500;
+  }
+  #jumboText{
+    padding:10px;
+  
+  }
+  .card-title{
+    text-align:center;
+  }
+  
+  .card-body{
+    min-height:200px;
+    height:auto;
+    max-height: 330px;
+    
+  }
+
+  #lilDexPic{
+      height:500px;
+  }
+  .btn{
+    background-color: #123784;
+    color:white;
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+  }
+  
+  ul{
+    list-style-type:none;
+    padding:0;
+  }
+
+/* Social Media */
+
+.user-media {
+    padding-top:10px;
+
+}
+.user-media a{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    margin: 0 3px;
+    padding: 3px;
+    display:inline-block;
+    border-radius: 50%;
+}
+
+.user-media a i{
+    color: #fff;
+    margin:0;
+}
+
+.color1{
+    background:darkcyan;
+}
+
+.color2{
+    background:darkslategray;
+}
+.color3{
+    background: mediumpurple;
+}
+.icon{
+    font-size:30px;
+}
+
+  /* Skill List CSS */
+
+
+.mycontainer{
+    background-color:rgba(0,0,0,0.7);
+    padding-right:20px;
+}
+.skills{
+    
+    width:100%;
+    margin:20px auto;
+    color:white;
+    
+}
+
+.skills li{
+
+  margin: 20px 0;
+}
+
+.bar{
+    background:#353b48;
+    display:block;
+    height:4px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+
+}
+
+.bar span{
+    height: 4px;
+    float: left;
+    background: #2187e7;
+
+}
+
+.html{
+    width:90%;
+    animation: html 5s;
+}
+
+.css{
+    width:75%;
+    animation: css 5s;
+}
+
+.jquery{
+    width:85%;
+    animation: jquery 5s;
+}
+
+.javascript{
+    width:85%;
+    animation: javascript 5s;
+}
+
+.node{
+    width:70%;
+    animation: node 5s;
+}
+
+.mysql{
+    width:60%;
+    animation: mysql 5s;
+}
+
+.mongo{
+    width:70%;
+    animation: mongo 5s;
+}
+
+.react{
+    width:60%;
+    animation: react 5s;
+}
+@keyframes html{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes jquery{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+@keyframes javascript{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+@keyframes node{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes mysql{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes mongo{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+@keyframes react{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+/* Carousel CSS */
+
+  @media (min-width: 768px) {
+      
+      .carousel-inner .active,
+      .carousel-inner .active + .carousel-item,
+      .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+      }
+    
+      .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+      .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+      .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+      }
+    
+      .carousel-inner .carousel-item-next,
+      .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+      }
+    
+      .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+      }
+    
+      /* left or forward direction */
+      .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+      .carousel-item-next.carousel-item-left + .carousel-item,
+      .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+      .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+      }
+    
+      /* farthest right hidden item must be abso position for animations */
+      .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+      }
+    
+      /* right or prev direction */
+      .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+      .carousel-item-prev.carousel-item-right + .carousel-item,
+      .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+      .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+      }
+    }
